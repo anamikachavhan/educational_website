@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Website | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">EduSite</a>
+
+        <nav class="navbar">
+            <a href="home.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="course-1.html">Courses</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    
+    <section class="home">
+        <div class="content">
+            <h1>Learn Anything, Anytime</h1>
+            <p>Best online education platform for students and professionals.</p>
+            <a href="course-1.html" class="btn">Get Started</a>
+        </div>
+    </section>
+
+
+    <section class="courses">
+        <h1 class="heading">Popular <span>Courses</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/course1.jpg" alt="">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, JavaScript and build real websites.</p>
+                <a href="course-1.html" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="images/course2.jpg" alt="">
+                <h3>Graphic Design</h3>
+                <p>Master Photoshop, Illustrator, UI/UX basics.</p>
+                <a href="course-2.html" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="images/course3.jpg" alt="">
+                <h3>Digital Marketing</h3>
+                <p>SEO, SEM, social media ads and content strategy.</p>
+                <a href="course-3.html" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="teachers">
+        <h1 class="heading">Our <span>Teachers</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/teacher1.jpg" alt="">
+                <h3>John Doe</h3>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="box">
+                <img src="images/teacher2.jpg" alt="">
+                <h3>Ana Lee</h3>
+                <p>UI/UX Designer</p>
+            </div>
+
+            <div class="box">
+                <img src="images/teacher3.jpg" alt="">
+                <h3>Mark White</h3>
+                <p>Marketing Expert</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reviews">
+        <h1 class="heading">Student <span>Reviews</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <p>"Amazing platform! Helped me get my dream job."</p>
+                <h3>Priya Sharma</h3>
+            </div>
+
+            <div class="box">
+                <p>"Courses are very clear and easy to understand."</p>
+                <h3>Sahil Patil</h3>
+            </div>
+
+            <div class="box">
+                <p>"Best teachers and best study material ever."</p>
+                <h3>Aisha Khan</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Explore</h3>
+                <a href="home.html"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="about.html"><i class="fas fa-arrow-right"></i> About</a>
+                <a href="course-1.html"><i class="fas fa-arrow-right"></i> Courses</a>
+                <a href="teachers.html"><i class="fas fa-arrow-right"></i> Teachers</a>
+                <a href="blog.html"><i class="fas fa-arrow-right"></i> Blog</a>
+                <a href="contact.html"><i class="fas fa-arrow-right"></i> Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>Categories</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> Web Design</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Graphic Design</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> UI/UX</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> SEO Marketing</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Digital Marketing</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> +91 0066766645</p>
+                <p><i class="fas fa-envelope"></i> info@edusite.com</p>
+                <p><i class="fas fa-map"></i> Mumbai, India</p>
+            </div>
+
+        </div>
+
+        <div class="credit">
+            ©copyright <span id="year"></span> EduSite | All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        
+        let menuBtn = document.getElementById('menu-btn');
+        let navbar = document.querySelector('.navbar');
+
+        menuBtn.onclick = () => {
+            navbar.classList.toggle('active');
+        };
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

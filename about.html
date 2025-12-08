@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | EduSite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">EduSite</a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="course-1.html">Courses</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    <div class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    
+    <section class="about-banner">
+        <h1>About Us</h1>
+        <p>Your journey to success starts here.</p>
+    </section>
+
+
+    <section class="about">
+        <div class="row">
+            <div class="image">
+                <img src="images/about.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h2>Why Choose EduSite?</h2>
+                <p>EduSite provides high-quality, affordable online education to students and professionals worldwide. 
+                Our mission is to empower learners through interactive courses, expert instructors, and a modern learning experience.</p>
+
+                <p>With our carefully designed courses, engaging videos, quizzes, assignments, and professional teachers, 
+                you get the best learning environment.</p>
+
+            <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Skilled Teachers</h3>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-book"></i>
+                        <h3>Best Courses</h3>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-users"></i>
+                        <h3>1000+ Students</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Explore</h3>
+                <a href="home.html"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="about.html"><i class="fas fa-arrow-right"></i> About</a>
+                <a href="course-1.html"><i class="fas fa-arrow-right"></i> Courses</a>
+                <a href="teachers.html"><i class="fas fa-arrow-right"></i> Teachers</a>
+                <a href="blog.html"><i class="fas fa-arrow-right"></i> Blog</a>
+                <a href="contact.html"><i class="fas fa-arrow-right"></i> Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>Categories</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> Web Design</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Graphic Design</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> UI/UX</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> SEO</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Marketing</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> +91 0998786685</p>
+                <p><i class="fas fa-envelope"></i> info@edusite.com</p>
+                <p><i class="fas fa-map"></i> Mumbai, India</p>
+            </div>
+
+        </div>
+
+        <div class="credit">
+            © <span id="year"></span> EduSite | All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+ let menuBtn = document.getElementById('menu-btn');
+        let navbar = document.querySelector('.navbar');
+
+        menuBtn.onclick = () => {
+            navbar.classList.toggle('active');
+        };
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
+
